@@ -67,4 +67,16 @@ usethis::use_git()
 
 #Once you have committed at least one file, you can create a repo on GitHub.
 library(usethis)
-use_github().
+use_github()
+
+#By default, the repo name on GitHub will match the RStudio project name, and the repo will be public.
+#Now go to GitHub, find your repo and check the files you committed have been uploaded.
+
+#Create a new RStudio project, set up git on it and agree to commit the files. You should now have a git tab in RStudio.
+#Rename the default branch to “main”.
+git_default_branch_rename()
+
+#Set up the project to use GitHub, push the committed files and view them on GitHub.
+
+
+
