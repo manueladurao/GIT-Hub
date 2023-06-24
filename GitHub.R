@@ -56,7 +56,7 @@ usethis::use_git()
 
 #in RStudio, create a git repo for your project with:
 
-usethis::use_git()
+
 
 #After creating the repo, the function will ask whether you want to commit some files.
 #If it is a new project, this is safe to agree to.
