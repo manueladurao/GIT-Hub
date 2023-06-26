@@ -1,0 +1,49 @@
+---
+title: "How to create quarto file"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+**How to create quarto file**
+
+An quarto file is a plain text file. You can create a new text file, give it the ".qmd" extension, and start typing. But it is better to use RStudio.
+
+If you don't see the "Quarto Document..." option, check you have quarto installed.
+
+```{r}
+install.packages("quarto")
+```
+
+## **Rendering the quarto document**
+
+The first time you render the document, you need to save it first. Render your quarto document and examine the output. If it worked then everything is set up correctly.
+
+For the rest of this tutorial, we will analyse plant trait data from Svalbard and make a reproducible report.
+
+To download the data and quarto document, you need to run
+
+```{r}
+install.packages("usethis") # if you don't have it already.
+usethis::use_course("biostats-r/svalbardQuartoDemo")
+```
